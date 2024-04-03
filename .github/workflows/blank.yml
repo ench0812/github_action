@@ -30,3 +30,9 @@ jobs:
       - uses: actions/checkout@v3
         with:
           repository: ench0812/github_app2
+
+      - name: Copy first repo contents
+        run: cp -r ./github_app1 ./app/app1
+
+      - name: Copy second repo contents
+        run: cp -r ./github_app2 ./app/app2
