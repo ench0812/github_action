@@ -28,7 +28,7 @@ jobs:
           repository: ench0812/github_app1
 
       - name: Copy first repo contents
-        uses: actions/copy@v2
+        uses: action/copy@v2
         with:
           src: ./github_app1
           dest: ./app/app1
