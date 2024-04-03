@@ -27,13 +27,6 @@ jobs:
         with:
           repository: ench0812/github_app1
 
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v3
         with:
-          node-version: '16'
-          run: npm install --save-dev @actions/copy
-
-      - name: Copy first repo contents
-        uses: actions/copy@v2
-        with:
-          src: ./github_app1
-          dest: ./app/app1
+          repository: ench0812/github_app2
