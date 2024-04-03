@@ -28,7 +28,7 @@ jobs:
           repository: https://github.com/ench0812/github_app1.git
 
       - name: Copy first repo contents
-        uses: actions/copy@v2
+        uses: action/copy@v2
         with:
           src: ./github_app1
           dest: ./app/app1
@@ -38,7 +38,7 @@ jobs:
           repository: https://github.com/ench0812/github_app2.git
 
       - name: Copy second repo contents
-        uses: actions/copy@v2
+        uses: action/copy@v2
         with:
           src: ./github_app2
           dest: ./app/app2
