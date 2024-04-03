@@ -33,7 +33,7 @@ jobs:
           run: npm install --save-dev @actions/copy
 
       - name: Copy first repo contents
-        uses: action/copy@v2
+        uses: actions/copy@v2
         with:
           src: ./github_app1
           dest: ./app/app1
