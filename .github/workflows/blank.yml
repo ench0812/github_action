@@ -34,4 +34,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Deploy to machine
         run: |
-          ssh -o StrictHostKeyChecking=no -i ${{ secrets.SSH_PRIVATE_KEY }} user@host "cd /home/spt/app && git pull"
+          ssh -o StrictHostKeyChecking=no -i ${{ secrets.SSH_PRIVATE_KEY }} spt@192.168.149.207 "cd /home/spt/app && git pull"
